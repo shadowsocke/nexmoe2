@@ -103,7 +103,7 @@
 <body class=" mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink">
 	<header class="mdui-appbar mdui-appbar-fixed mdui-color-theme mdui-appbar-inset">	
         <div class="mdui-toolbar mdui-color-theme">
-            <span class="mdui-btn  mdui-typo-headline mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" mdui-tooltip="{content: '²Ëµ¥'}"><i class="mdui-icon material-icons">menu</i></span>
+            <span class="mdui-btn  mdui-typo-headline mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" mdui-tooltip="{content: 'èœå•'}"><i class="mdui-icon material-icons">menu</i></span>
             <a href="<!--base_path-->" class="mdui-typo-headline"><!--Sitename--></a>
 <!--PathArrayStart-->
                 <i class="mdui-icon material-icons mdui-icon-dark" style="margin:0;">chevron_right</i>
@@ -111,7 +111,7 @@
 <!--PathArrayEnd-->
             <div class="mdui-toolbar-spacer"></div>
 <!--ShowThumbnailsStart-->
-            <a href="javascript:thumb();" id="thumb" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'ÇĞ»»ÏÔÊ¾'}"><i class="mdui-icon material-icons">format_list_bulleted</i></a>
+            <a href="javascript:thumb();" id="thumb" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'åˆ‡æ¢æ˜¾ç¤º'}"><i class="mdui-icon material-icons">format_list_bulleted</i></a>
 <!--ShowThumbnailsEnd-->
         </div>
 	</header>
@@ -150,7 +150,7 @@
 
 <!--EncryptedStart-->
 <div class="mdui-col-md-6 mdui-col-offset-md-3">
-    <!--<center><h1 class="mdui-typo-display-2-opacity">ÕâÊÇÒ»¸öÊÜ±£»¤µÄÎÄ¼ş¼Ğ£¬ÄúĞèÒªÌá¹©·ÃÎÊÃÜÂë²ÅÄÜ²é¿´¡£</h1></center>-->
+    <!--<center><h1 class="mdui-typo-display-2-opacity">è¿™æ˜¯ä¸€ä¸ªå—ä¿æŠ¤çš„æ–‡ä»¶å¤¹ï¼Œæ‚¨éœ€è¦æä¾›è®¿é—®å¯†ç æ‰èƒ½æŸ¥çœ‹ã€‚</h1></center>-->
     <form action="" method="post">
         <div class="mdui-textfield mdui-textfield-floating-label">
           <i class="mdui-icon material-icons">https</i>
@@ -391,7 +391,7 @@ $$(function() {
             //url=url.substr(0,url.length-8);
             layer.open({
               type: 2,
-              title: '<a target="_blank" href="'+url+'">'+ $$(this).find('span').text()+'(µã»÷ĞÂ´°¿Ú´ò¿ª)</a>', //jia,
+              title: '<a target="_blank" href="'+url+'">'+ $$(this).find('span').text()+'(ç‚¹å‡»æ–°çª—å£æ‰“å¼€)</a>', //jia,
               //shadeClose: true,
               move: false,
               shade: false,
@@ -489,16 +489,16 @@ $.fn.extend({
 var lightbox = GLightbox();
 function downall() {
      let dl_link_list = Array.from(document.querySelectorAll("li a"))
-         .map(x => x.href) // ËùÓĞlistÖĞµÄÁ´½Ó
-         .filter(x => x.slice(-1) != "/"); // É¸Ñ¡³ö·ÇÎÄ¼ş¼ĞµÄÎÄ¼şÏÂÔØÁ´½Ó
+         .map(x => x.href) // æ‰€æœ‰listä¸­çš„é“¾æ¥
+         .filter(x => x.slice(-1) != "/"); // ç­›é€‰å‡ºéæ–‡ä»¶å¤¹çš„æ–‡ä»¶ä¸‹è½½é“¾æ¥
 
      let blob = new Blob([dl_link_list.join("\r\n")], {
          type: 'text/plain'
-     }); // ¹¹ÔìBlog¶ÔÏó
-     let a = document.createElement('a'); // Î±ÔìÒ»¸öa¶ÔÏó
-     a.href = window.URL.createObjectURL(blob); // ¹¹ÔìhrefÊôĞÔÎªBlob¶ÔÏóÉú³ÉµÄÁ´½Ó
-     a.download = "folder_download_link.txt"; // ÎÄ¼şÃû³Æ£¬Äã¿ÉÒÔ¸ù¾İÄãµÄĞèÒª¹¹Ôì
-     a.click() // Ä£Äâµã»÷
+     }); // æ„é€ Blogå¯¹è±¡
+     let a = document.createElement('a'); // ä¼ªé€ ä¸€ä¸ªaå¯¹è±¡
+     a.href = window.URL.createObjectURL(blob); // æ„é€ hrefå±æ€§ä¸ºBlobå¯¹è±¡ç”Ÿæˆçš„é“¾æ¥
+     a.download = "folder_download_link.txt"; // æ–‡ä»¶åç§°ï¼Œä½ å¯ä»¥æ ¹æ®ä½ çš„éœ€è¦æ„é€ 
+     a.click() // æ¨¡æ‹Ÿç‚¹å‡»
      a.remove();
 }
 <!--ShowThumbnailsStart-->
